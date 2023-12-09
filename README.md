@@ -9,6 +9,7 @@ This is my batteries included generic TypeScript starter, with:
 - 📦 bundling with [esbuild](https://esbuild.github.io/)
 - ⚗️ Code linting & formatting with [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
 - 🔬 [VS Code](https://code.visualstudio.com/) configuration for debugging
+- 🔁 GitHub Actions workflow to run code quality checks and tests
 
 ## ✅ Prerequisites
 
