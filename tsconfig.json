@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "lib": [
+      "DOM",
+      "ES2021"
+    ],
+    "target": "ES2021",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strict": true,
+    "sourceMap": true,
+    "removeComments": false,
+    "noEmitOnError": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src"
+  ], // which files to compile
+  "exclude": [
+    "node_modules",
+    "./*.ts",
+    "./src/__test__/"
+  ], // which files to skip
+}

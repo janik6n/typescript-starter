@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+**/.env
+
+# TS
+**/node_modules/
+dist/
+
+# Jest
+**/coverage/
