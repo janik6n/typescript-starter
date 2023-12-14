@@ -9,6 +9,7 @@ This is my batteries included generic TypeScript starter, with:
 - 📦 bundling with [esbuild](https://esbuild.github.io/)
 - ⚗️ Code linting & formatting with [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
 - 🔬 [VS Code](https://code.visualstudio.com/) configuration for debugging
+- 🔥 hot reloading
 - 🔁 GitHub Actions workflow to run code quality checks and tests
 
 ## ✅ Prerequisites
@@ -31,7 +32,7 @@ How to use this template?
 
 ### ⚙️ Run development server
 
-To run TypeScript to JavaScript transpiling and run `index.js` in watch mode (a.k.a. continuosly), run `npm run dev`.
+To run TypeScript to JavaScript transpiling and to run transpiled `dist/index.js` in watch mode (a.k.a. *hot reloading*), run `npm run dev`.
 
 ### 🚥 Run tests
 
@@ -54,7 +55,7 @@ Build the production bundle with esbuild by running `npm run build`. Build is co
 
 ### ⚙️ Serve production bundle
 
-Serve the built app with `npm run serve`.
+Serve the built app with `npm run start`.
 
 ## 🐛 Known issues
 
@@ -79,6 +80,7 @@ Serve the built app with `npm run serve`.
 - https://github.com/microsoft/vscode-recipes/tree/main/debugging-jest-tests
 - https://code.visualstudio.com/docs/editor/debugging#_launch-configurations
 - https://github.com/jest-community/vscode-jest#runmode
+
 
 ## 🔁 Changelog
 
