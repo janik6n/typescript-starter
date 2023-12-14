@@ -20,7 +20,7 @@
     "clean": "rm -rf ./dist && mkdir ./dist",
     "build": "npm run clean && node ./build.js",
     "build:container": "echo \"TODO: Not implemented yet\" && exit 1",
-    "serve": "node ./dist/index.js"
+    "start": "node ./dist/index.js"
   },
   "devDependencies": {
     "@types/jest": "^29.5.10",
