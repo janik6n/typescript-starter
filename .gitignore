@@ -1,10 +1,10 @@
 .DS_Store
 *.log
 **/.env
-
+**/data
 # TS
 **/node_modules/
-dist/
+**/dist/
 
-# Jest
+# tests
 **/coverage/

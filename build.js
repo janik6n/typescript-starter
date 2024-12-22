@@ -1,21 +1,17 @@
 import * as esbuild from 'esbuild';
-import esbuildPluginTsc from 'esbuild-plugin-tsc';
 
 const settings = {
   entryPoints: ['src/index.ts'],
-  outfile: 'dist/index.js',
+  outfile: 'dist/index.mjs',
+
   platform: 'node',
-  target: 'node20',
+  target: 'node22',
   format: 'esm',
+  mainFields: ['module', 'main'],
   bundle: true,
   minify: true,
   keepNames: true,
-  sourcemap: true,
-  plugins: [
-    esbuildPluginTsc({
-      force: true
-    })
-  ]
+  sourcemap: true
 };
 
 await esbuild.build(settings);

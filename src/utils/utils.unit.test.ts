@@ -1,5 +1,7 @@
-import type { Config } from '../../models/config-model.js';
-import { validateConfig } from '../../utils/utils.js';
+import { describe, it, expect } from 'vitest';
+
+import type { Config } from '../models/config-model.js';
+import { validateConfig } from './utils.js';
 
 describe(`Utils test suite`, () => {
   it(`should return true for valid Config object`, async () => {
@@ -13,7 +15,7 @@ describe(`Utils test suite`, () => {
 
     const actual = await sut(testConfig);
 
-    expect(actual).toBeTruthy;
+    expect(actual).toBeTruthy();
   });
 
   it(`should return false for invalid Config object`, async () => {
@@ -27,6 +29,6 @@ describe(`Utils test suite`, () => {
 
     const actual = await sut(testConfig);
 
-    expect(actual).toBeFalsy;
+    expect(actual).toBeFalsy();
   });
 });

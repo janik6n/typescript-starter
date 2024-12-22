@@ -1,7 +1,0 @@
-{
-  "jest.jestCommandLine": "NODE_OPTIONS=--experimental-vm-modules node_modules/.bin/jest",
-  "jest.autoRun": {
-    "type": "on-demand",
-    "revealOutput": "on-run"
-  }
-}
