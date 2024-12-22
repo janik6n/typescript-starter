@@ -1,3 +1,13 @@
+![TypeScript](https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square)
+![Node.js](https://shields.io/badge/Node.js-417e38?logo=nodedotjs&logoColor=FFF&style=flat-square)
+![ESLint](https://shields.io/badge/ESLint-4b32c3?logo=eslint&logoColor=FFF&style=flat-square)
+![Prettier](https://shields.io/badge/Prettier-f8bc45?logo=prettier&logoColor=FFF&style=flat-square)
+![Vitest](https://shields.io/badge/Vitest-acd268?logo=vitest&logoColor=FFF&style=flat-square)
+![Esbuild](https://shields.io/badge/Esbuild-ffcf00?logo=esbuild&logoColor=FFF&style=flat-square)
+![VS Code](https://shields.io/badge/VS%20Code-0078d4?style=flat-square)
+![GitHub](https://shields.io/badge/GitHub-000?logo=github&logoColor=FFF&style=flat-square)
+[![Build Status](https://github.com/janik6n/typescript-starter/workflows/Code%20quality%20checks/badge.svg)](https://github.com/janik6n/typescript-starter/actions)
+
 # TypeScript Starter 🔋
 
 This is my batteries included TypeScript starter updated for 2025, with:
