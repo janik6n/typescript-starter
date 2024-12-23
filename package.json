@@ -1,7 +1,7 @@
 {
   "name": "typescript-starter",
   "description": "TypeScript Starter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/janik6n/typescript-starter#readme",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   "scripts": {
     "build": "rimraf ./dist && npx tsc --noEmit && node build.js",
     "build:tsc": "rimraf ./dist && tsc",
-    "build:container": "echo \"TODO: Not implemented yet\" && exit 1",
+    "build:container": "docker build -t typescript-starter:1.1.0 .",
     "dev": "tsx src/index.ts",
     "dev:watch": "tsx watch src/index.ts",
     "format": "prettier . --write",
@@ -34,7 +34,8 @@
     "test:cov": "vitest run --coverage.enabled=true",
     "test:watch": "vitest --coverage.enabled=false --project='unit-integration'",
     "test:ci": "vitest run --coverage.enabled=true --project='unit-integration'",
-    "start": "node ./dist/index.mjs"
+    "start": "node ./dist/index.mjs",
+    "start:container": "docker run -it --rm typescript-starter:1.1.0"
   },
   "engines": {
     "node": ">=22.0.0"
@@ -53,5 +54,6 @@
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.1",
     "vitest": "^2.1.8"
-  }
+  },
+  "dependencies": {}
 }

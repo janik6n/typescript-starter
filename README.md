@@ -4,6 +4,7 @@
 ![Prettier](https://shields.io/badge/Prettier-f8bc45?logo=prettier&logoColor=FFF&style=flat-square)
 ![Vitest](https://shields.io/badge/Vitest-acd268?logo=vitest&logoColor=FFF&style=flat-square)
 ![Esbuild](https://shields.io/badge/Esbuild-ffcf00?logo=esbuild&logoColor=FFF&style=flat-square)
+![Docker](https://shields.io/badge/Docker-1D63ED?logo=Docker&logoColor=FFF&style=flat-square)
 ![VS Code](https://shields.io/badge/VS%20Code-0078d4?style=flat-square)
 ![GitHub](https://shields.io/badge/GitHub-000?logo=github&logoColor=FFF&style=flat-square)
 [![Build Status](https://github.com/janik6n/typescript-starter/workflows/Code%20quality%20checks/badge.svg)](https://github.com/janik6n/typescript-starter/actions)
@@ -17,7 +18,8 @@ This is my batteries included TypeScript starter updated for 2025, with:
 - ⚙️ NPM package manager
 - 🚥 testing with [Vitest](https://vitest.dev/)
 - 📦 production bundling with [esbuild](https://esbuild.github.io/)
-- ⚗️ Code linting & formatting with [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
+- 🐳 optional building of production ready [Docker](https://www.docker.com/) image
+- ⚗️ Code linting & formatting with [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
 - 🔬 [VS Code](https://code.visualstudio.com/) configuration for debugging
 - 🔥 hot reloading
 - 🔁 GitHub Actions workflow to run code quality checks and tests
@@ -25,7 +27,7 @@ This is my batteries included TypeScript starter updated for 2025, with:
 ## ✅ Prerequisites
 
 - Make sure you have Node.js 22 installed. This is built, configured and tested with `Node.js 22`.
-- Install VS Code, and the following extensions:
+- If you want to use VS Code, make sure the following extensions are installed:
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Vitest](https://marketplace.visualstudio.com/items?itemName=vitest.explorer)
 
@@ -34,7 +36,7 @@ This is my batteries included TypeScript starter updated for 2025, with:
 How to use this template?
 
 1. Make sure prerequisites are met.
-2. Copy the repository as zip so you don't have to deal with git history.
+2. Download the repository as zip so you don't have to deal with git history of this repository.
 3. Delete `package-lock.json`.
 3. Replace `janik6n` in `package.json` with your own username, along with other info.
 3. Install dependencies by running `npm install` on the project root directory.
@@ -78,11 +80,17 @@ Build command explained: `"build": "rimraf ./dist && npx tsc --noEmit && node bu
 
 Sometimes it is necessary to see the built app with just transpiling without bundling. This can be accomplished with `npm run build:tsc`.
 
-*Future plans: build as Docker 🐳 container with `npm run build:container`.*
+### ⚙️ Run production bundle
 
-### ⚙️ Serve production bundle
+Run the built app with `npm run start`.
 
-Serve the built app with `npm run start`.
+### 🐳 Build as container
+
+Run `npm run build:container` to build the app as Docker container. Multi-stage build is used to minimize the production image size. Debian-based image is used to minimize the risk of compatibility issues.
+
+### 🐳 Run as container
+
+Run the containerized app with `npm run start:container`.
 
 ## 🐛 Known issues
 
@@ -122,6 +130,11 @@ None as of now. 🦗
 ### Esbuild
 
 - https://esbuild.github.io/
+
+### Docker & Node.js
+
+- https://hub.docker.com/_/node
+- https://snyk.io/blog/choosing-the-best-node-js-docker-image/
 
 ### GitHub
 
