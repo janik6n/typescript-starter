@@ -29,4 +29,5 @@ COPY --chown=node:node --from=builder /app/dist .
 # Set environment variable as an example
 ENV CONTAINERIZED=true
 # Run the app
-CMD ["sh", "-c", "dumb-init node index.mjs"]
+ENTRYPOINT ["dumb-init", "node", "index.mjs"]
+CMD []
