@@ -16,12 +16,12 @@ This is my batteries included TypeScript starter updated for 2025, with:
 - ✏️ [TypeScript](https://www.typescriptlang.org/) 5.7
 - 📚 ECMAScript Modules
 - ⚙️ NPM package manager
+- ⚗️ code linting & formatting with [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
 - 🚥 testing with [Vitest](https://vitest.dev/)
-- 📦 production bundling with [esbuild](https://esbuild.github.io/)
-- 🐳 optional building of production ready [Docker](https://www.docker.com/) image
-- ⚗️ Code linting & formatting with [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
-- 🔬 [VS Code](https://code.visualstudio.com/) configuration for debugging
+- 🔬 [VS Code](https://code.visualstudio.com/) configuration for debugging and testing
 - 🔥 hot reloading
+- 📦 production bundling with [esbuild](https://esbuild.github.io/)
+- 🐳 optional production ready [Docker](https://www.docker.com/) image creation
 - 🔁 GitHub Actions workflow to run code quality checks and tests
 
 ## ✅ Prerequisites
@@ -57,7 +57,7 @@ To run tests, you have a several of options:
 - Run integration tests with `npm run test:integration`. This runs all tests which are in files with name `*.integration.test.ts`.
 - Run end-to-end (e2e) tests with `npm run test:e2e`. This runs all tests which are in files with name `*.e2e.test.ts`.
 - Run unit and integration tests in watch mode with `npm run test:watch` in separate terminal session than your development server.
-- Run unit and integration tests in CI environment with `npm run test:ci`. Note: this script exists so it is easy to configure which tests are run in CI.
+- Run unit and integration tests in CI environment with `npm run test:ci`. Note: this script exists so it's easy to configure which tests are run in CI.
 
 ### ⚗️ Format source code
 
@@ -74,11 +74,11 @@ The idea is to run [ESLint](https://eslint.org/) & [Prettier](https://prettier.i
 Build the production bundle with [esbuild](https://esbuild.github.io/) by running `npm run build`. Build is configured in `build.js`.
 
 Build command explained: `"build": "rimraf ./dist && npx tsc --noEmit && node build.js"`:
-- `rimraf`: delete ./dist folder
+- `rimraf ./dist`: delete ./dist folder
 - `npx tsc --noEmit`: run type checks
-- `node build.js`: build and bundle with esbuild, which does not do type checking, but creates nice small bundles
+- `node build.js`: build and bundle with esbuild, which does not do type checking, but it creates nice small bundles
 
-Sometimes it is necessary to see the built app with just transpiling without bundling. This can be accomplished with `npm run build:tsc`.
+Sometimes it's necessary to see the built app with just transpiling without bundling. This can be accomplished with `npm run build:tsc`.
 
 ### ⚙️ Run production bundle
 
@@ -115,7 +115,7 @@ None as of now. 🦗
 - https://vitest.dev/
 - https://vitest.dev/guide/workspace.html
 
-### VSCode TS debugging & Vitest
+### VS Code TS debugging & Vitest
 
 - https://code.visualstudio.com/docs/typescript/typescript-debugging
 - https://code.visualstudio.com/docs/editor/testing
