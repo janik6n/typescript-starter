@@ -8,6 +8,9 @@ updates:
   - package-ecosystem: "docker"
     # Look for a `Dockerfile` in the `root` directory
     directory: "/"
+    allow:
+      - dependency-name: "*"
+        versions: ["22.*-bookworm-slim"]
     schedule:
       interval: "weekly"
   - package-ecosystem: "github-actions"
