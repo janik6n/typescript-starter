@@ -24,6 +24,8 @@ This is my batteries included TypeScript starter updated for 2025, with:
 - 🐳 optional production ready [Docker](https://www.docker.com/) image creation
 - 🔁 GitHub Actions workflow to run code quality checks and tests
 
+This starter is more geared towards backend than frontend use.
+
 ## ✅ Prerequisites
 
 - Make sure you have Node.js 22 installed. This is built, configured and tested with `Node.js 22`.
@@ -95,6 +97,13 @@ Run the containerized app with `npm run start:container`.
 ## 🐛 Known issues
 
 None as of now. 🦗
+
+## What’s not inside
+
+Here are some things that *could be included* in a starter, but are not in this one:
+- Monorepo setup
+- Any particular app’s source code
+- Git pre-commit hooks (I do not prefer to use them)
 
 ## 📚 Further reading
 
