@@ -102,6 +102,12 @@ Run `npm run build:container` to build the app as Docker container. Multi-stage 
 
 Run the containerized app with `npm run start:container`.
 
+## 🔬 Available VS Code configurations
+
+There are two debugger launch configurations included:
+- `Debug Current File` is meant to debug the currently active TypeScript file.
+- `Debug Current Test File` is same, but for test files.
+
 ## 🐛 Known issues
 
 None as of now. 🦗

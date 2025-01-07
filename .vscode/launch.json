@@ -4,6 +4,21 @@
   "configurations": [
     {
       "type": "node",
+      "name": "Debug Current File",
+      "request": "launch",
+      "runtimeExecutable": "tsx",
+      "program": "${file}",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "sourceMaps": true,
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "type": "node",
       "request": "launch",
       "name": "Debug Current Test File",
       "autoAttachChildProcesses": true,
