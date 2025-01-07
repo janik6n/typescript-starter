@@ -1,3 +1,6 @@
+# syntax=docker/dockerfile:1
+# check=error=true
+
 # Node build image
 FROM node:22.12.0-bookworm AS builder
 # Install Ubuntu packages + dumb-init

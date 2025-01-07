@@ -44,6 +44,10 @@ How to use this template?
 3. Install dependencies by running `npm install` on the project root directory.
 4. Start developing. See below for available scripts.
 
+## Available scripts
+
+Following scripts have been configured, and they should give ideas for further development.
+
 ### ⚙️ Run development server
 
 To run TypeScript to JavaScript transpiling and to run transpiled `./dist/index.mjs` run `npm run dev`. Watch mode (a.k.a. *hot reloading*) is available with `npm run dev:watch`. Development serving is handled with [tsx](https://tsx.is/).
@@ -86,6 +90,10 @@ Sometimes it's necessary to see the built app with just transpiling without bund
 
 Run the built app with `npm run start`.
 
+### 🐳 Check container build for issues
+
+Run `npm run check:container` to check Docker build for issues, without actually building the image. `Dockerfile` is configured so that failing checks will exit with error status. See [Build checks | Docker Docs](https://docs.docker.com/build/checks/) for more info.
+
 ### 🐳 Build as container
 
 Run `npm run build:container` to build the app as Docker container. Multi-stage build is used to minimize the production image size. Debian-based image is used to minimize the risk of compatibility issues.
@@ -98,12 +106,12 @@ Run the containerized app with `npm run start:container`.
 
 None as of now. 🦗
 
-## What’s not inside
+## ✂️ What’s not inside
 
 Here are some things that *could be included* in a starter, but are not in this one:
 - Monorepo setup
 - Any particular app’s source code
-- Git pre-commit hooks (I do not prefer to use them)
+- Git pre-commit hooks
 
 ## 📚 Further reading
 
@@ -144,6 +152,7 @@ Here are some things that *could be included* in a starter, but are not in this 
 
 - https://hub.docker.com/_/node
 - https://snyk.io/blog/choosing-the-best-node-js-docker-image/
+- https://docs.docker.com/build/checks/
 
 ### GitHub
 
