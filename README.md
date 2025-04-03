@@ -13,7 +13,7 @@
 
 This is my batteries included TypeScript starter updated for 2025, with:
 - 🟩 [Node.js](https://nodejs.org/) 22
-- ✏️ [TypeScript](https://www.typescriptlang.org/) 5.7
+- ✏️ [TypeScript](https://www.typescriptlang.org/) 5.8
 - 📚 ECMAScript Modules
 - ⚙️ NPM package manager
 - ⚗️ code linting & formatting with [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
