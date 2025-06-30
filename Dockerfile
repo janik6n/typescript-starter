@@ -2,7 +2,7 @@
 # check=error=true
 
 # Node build image
-FROM node:22.14.0-bookworm AS builder
+FROM node:22.17.0-bookworm AS builder
 # Install Ubuntu packages + dumb-init
 RUN apt-get update && apt-get install -y --no-install-recommends dumb-init
 # Set working directory
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Production image
-FROM node:22.14.0-bookworm-slim AS production
+FROM node:22.17.0-bookworm-slim AS production
 # Install ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates && rm -rf /var/lib/apt/lists/*
 # Set Node.js environment to production
