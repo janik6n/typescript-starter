@@ -5,6 +5,29 @@ All notable changes to this template will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2025-09-20
+
+### Added
+
+### Changed
+
+- Npm dependencies updated.
+- Exact version pinning for npm dependencies.
+- Updated container Node.js version from 22.14.0 > 22.19.0.
+- GitHub Actions action version updates.
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
+### Security
+
+- Exact version pinning for npm dependencies.
+
+### Internal
+
 ## [1.4.1] - 2025-04-03
 
 ### Added

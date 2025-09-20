@@ -1,7 +1,7 @@
 {
   "name": "typescript-starter",
   "description": "TypeScript Starter",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "homepage": "https://github.com/janik6n/typescript-starter#readme",
   "repository": {
     "type": "git",
@@ -42,18 +42,18 @@
     "node": ">=22.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitest/coverage-v8": "^3.1.1",
-    "esbuild": "^0.25.2",
-    "eslint": "^9.23.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-prettier": "^5.2.6",
-    "prettier": "^3.5.3",
-    "rimraf": "^6.0.1",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.29.0",
-    "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.1.1"
+    "@types/node": "22.14.1",
+    "@vitest/coverage-v8": "3.2.4",
+    "esbuild": "0.25.10",
+    "eslint": "9.36.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.4",
+    "prettier": "3.6.2",
+    "rimraf": "6.0.1",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2",
+    "typescript-eslint": "8.44.0",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "3.2.4"
   }
 }

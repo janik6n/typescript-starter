@@ -12,8 +12,8 @@
 # TypeScript Starter 🔋
 
 This is my batteries included TypeScript starter updated for 2025, with:
-- 🟩 [Node.js](https://nodejs.org/) 22
-- ✏️ [TypeScript](https://www.typescriptlang.org/) 5.8
+- 🟩 [Node.js](https://nodejs.org/) 22 (LTS)
+- ✏️ [TypeScript](https://www.typescriptlang.org/) 5.9
 - 📚 ECMAScript Modules
 - ⚙️ NPM package manager
 - ⚗️ code linting & formatting with [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
@@ -21,7 +21,7 @@ This is my batteries included TypeScript starter updated for 2025, with:
 - 🔬 [VS Code](https://code.visualstudio.com/) configuration for debugging and testing
 - 🔥 hot reloading
 - 📦 production bundling with [esbuild](https://esbuild.github.io/)
-- 🐳 optional production ready [Docker](https://www.docker.com/) image creation
+- 🐳 production ready [Docker](https://www.docker.com/) image build
 - 🔁 GitHub Actions workflow to run code quality checks and tests
 
 This starter is more geared towards backend than frontend use.
@@ -29,7 +29,7 @@ This starter is more geared towards backend than frontend use.
 ## ✅ Prerequisites
 
 - Make sure you have Node.js 22 installed. This is built, configured and tested with `Node.js 22`.
-- If you want to use VS Code, make sure the following extensions are installed:
+- If you want to use VS Code, make sure the following extensions are installed and configured:
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Vitest](https://marketplace.visualstudio.com/items?itemName=vitest.explorer)
 
@@ -50,7 +50,7 @@ Following scripts have been configured, and they should give ideas for further d
 
 ### ⚙️ Run development server
 
-To run TypeScript to JavaScript transpiling and to run transpiled `./dist/index.mjs` run `npm run dev`. Watch mode (a.k.a. *hot reloading*) is available with `npm run dev:watch`. Development serving is handled with [tsx](https://tsx.is/).
+To run TypeScript to JavaScript transpiling and to run transpiled `./dist/index.mjs` run `npm run dev`. Watch mode (a.k.a. *hot reloading* 🔥) is available with `npm run dev:watch`. Development serving is handled with [tsx](https://tsx.is/).
 
 ### 🚥 Run tests
 
@@ -65,15 +65,15 @@ To run tests, you have a several of options:
 - Run unit and integration tests in watch mode with `npm run test:watch` in separate terminal session than your development server.
 - Run unit and integration tests in CI environment with `npm run test:ci`. Note: this script exists so it's easy to configure which tests are run in CI.
 
-### ⚗️ Format source code
-
-Format the source code with [Prettier](https://prettier.io/) by running `npm run format`.
-
 ### ⚗️ Lint source code
 
 Lint a.k.a. check the formatting of the source code with `npm run lint`.
 
 The idea is to run [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) on VS Code as you code, so this script is mostly for code quality checks in CI. Prettier is run as ESLint plugin.
+
+### 🛠️ Format source code
+
+Format the source code with [Prettier](https://prettier.io/) by running `npm run format`.
 
 ### 📦 Build production bundle
 
@@ -86,7 +86,7 @@ Build command explained: `"build": "rimraf ./dist && npx tsc --noEmit && node bu
 
 Sometimes it's necessary to see the built app with just transpiling without bundling. This can be accomplished with `npm run build:tsc`.
 
-### ⚙️ Run production bundle
+### 🚀 Run production bundle
 
 Run the built app with `npm run start`.
 
