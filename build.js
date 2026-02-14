@@ -5,7 +5,7 @@ const settings = {
   outfile: 'dist/index.mjs',
 
   platform: 'node',
-  target: 'node22',
+  target: 'node24',
   format: 'esm',
   mainFields: ['module', 'main'],
   bundle: true,
