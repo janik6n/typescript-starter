@@ -12,7 +12,7 @@
 # TypeScript Starter 🔋
 
 This is my batteries included TypeScript starter updated for 2025, with:
-- 🟩 [Node.js](https://nodejs.org/) 22 (LTS)
+- 🟩 [Node.js](https://nodejs.org/) 24 (LTS)
 - ✏️ [TypeScript](https://www.typescriptlang.org/) 5.9
 - 📚 ECMAScript Modules
 - ⚙️ NPM package manager
@@ -28,7 +28,7 @@ This starter is more geared towards backend than frontend use.
 
 ## ✅ Prerequisites
 
-- Make sure you have Node.js 22 installed. This is built, configured and tested with `Node.js 22`.
+- Make sure you have Node.js 24 installed. This is built, configured and tested with `Node.js 24`.
 - If you want to use VS Code, make sure the following extensions are installed and configured:
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Vitest](https://marketplace.visualstudio.com/items?itemName=vitest.explorer)
@@ -54,7 +54,7 @@ To run TypeScript to JavaScript transpiling and to run transpiled `./dist/index.
 
 ### 🚥 Run tests
 
-Test are run with [Vitest](https://vitest.dev/), and different test scenarios are handled with [Vitest workspaces](https://vitest.dev/guide/workspace.html).
+Test are run with [Vitest](https://vitest.dev/), and different test scenarios are handled with [Test Projects](https://vitest.dev/guide/projects).
 
 To run tests, you have a several of options:
 - Run all tests with `npm run test`.
@@ -136,7 +136,7 @@ Here are some things that *could be included* in a starter, but are not in this 
 ### Vitest
 
 - https://vitest.dev/
-- https://vitest.dev/guide/workspace.html
+- https://vitest.dev/guide/projects
 
 ### VS Code TS debugging & Vitest
 

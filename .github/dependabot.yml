@@ -10,7 +10,7 @@ updates:
     directory: "/"
     ignore:
       - dependency-name: "*"
-        versions: [">=23.0"]
+        versions: [">=25.0"]
     schedule:
       interval: "weekly"
   - package-ecosystem: "github-actions"
