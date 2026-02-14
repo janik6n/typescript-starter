@@ -11,7 +11,7 @@
 
 # TypeScript Starter 🔋
 
-This is my batteries included TypeScript starter updated for 2025, with:
+This is my batteries included TypeScript starter updated for 2026, with:
 - 🟩 [Node.js](https://nodejs.org/) 24 (LTS)
 - ✏️ [TypeScript](https://www.typescriptlang.org/) 5.9
 - 📚 ECMAScript Modules

@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Npm dependencies updated.
 - Updated container Node.js version from 22.19.0 > 24.13.1.
 - GitHub Actions action version updates.
+- Dependabot instructed to ignore:
+  - `@types/node` versions `>=25.0`
+  - `eslint` versions `>=10.0` for now
 
 ### Deprecated
 
