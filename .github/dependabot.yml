@@ -6,8 +6,6 @@ updates:
     ignore:
       - dependency-name: "@types/node"
         versions: [">=25.0"]
-      - dependency-name: "eslint"
-        versions: [">=10.0"]
     schedule:
       interval: "weekly"
   - package-ecosystem: "docker"
